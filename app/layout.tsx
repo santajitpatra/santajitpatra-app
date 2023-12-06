@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar/>
+          <Navbar />
+          <NextTopLoader
+            color="#0e7490"
+            height={4}
+            showSpinner={false}           
+          />
+
           {children}
         </ThemeProvider>
       </body>
