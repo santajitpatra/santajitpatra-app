@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import seox from "/public/images/seox.png";
 import { Button } from './ui/button';
 
 const Hero = () => {
@@ -11,18 +10,18 @@ const Hero = () => {
           <div className="mb-10 lg:mb-0 lg:max-w-lg lg:pr-5">
             <div className="mb-6 max-w-xl">
               <div>
-                <p className="bg-teal-accent-400 mb-2 inline-block rounded-full px-3 text-xs font-semibold uppercase tracking-wider text-primary-dark">
+                <p className="bg-teal-accent-400 mb-2 inline-block rounded-full px-3 text-xs font-semibold uppercase tracking-wider text-cyan-500">
                   New and improved
                 </p>
               </div>
-              <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-snug tracking-tight text-white sm:text-5xl sm:leading-snug">
+              <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-snug tracking-tight sm:text-5xl sm:leading-snug text-white">
                 Santajit&apos;s
-                <span className="my-1 inline-block rounded bg-white px-2 text-violet-600">
+                <span className="my-1 inline-block rounded bg-white dark:bg-white px-2 text-violet-600">
                   Work
                 </span>
-                <span className="text-primary-dark">Place</span>
+                <span className="text-cyan-500">Place</span>
               </h2>
-              <p className="text-base TEXTCOLOR">
+              <p className="text-base text-slate-400">
                 Elevate your online presence with my expert web development
                 services. From stunning designs to custom functionality,
                 I&apos;ll help you stand out in a crowded digital world. Let Me
@@ -31,12 +30,12 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex flex-col items-center md:flex-row">
-              <Button variant={"secondary"} asChild>
-                <Link href="/about" className="btn-primary ">
+              <Button asChild>
+                <Link href="/about" className="btn-primary">
                   About Us
                 </Link>
               </Button>
-              <Button variant={"secondary"} asChild>
+              <Button asChild>
                 <Link href="/contact" aria-label="" className="btn-primary">
                   Contact Us
                 </Link>

@@ -19,22 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider
+      <body className={`bg-[#0a162f] ${inter.className}`}>
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-          <Navbar />
-          <NextTopLoader
-            color="#0e7490"
-            height={4}
-            showSpinner={false}           
-          />
+        > */}
+        <Navbar />
+        <NextTopLoader color="#0e7490" height={4} showSpinner={false} />
 
-          {children}
-        </ThemeProvider>
+        {children}
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <MaxWidthWrapper >
+      <MaxWidthWrapper className="max-w-screen-2xl">
         <Hero />
       </MaxWidthWrapper>
     </>

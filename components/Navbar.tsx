@@ -39,7 +39,7 @@ const Navbar = () => {
               <path d="M12.26 12.015h-.01c-.01 .13 -.12 .24 -.26 .24a0.263 .263 0 0 1 -.25 -.26c0 -.14 .11 -.25 .24 -.25h-.01c.13 -.01 .25 .11 .25 .24" />
             </svg>
           </span>
-          <h2 className="text-3xl font-bold">
+          <h2 className="text-3xl font-bold text-white">
             Santajit<span className="text-cyan-500">Patra</span>
           </h2>
         </Link>
@@ -71,19 +71,21 @@ const Navbar = () => {
             {menu.map((menuItem) => (
               <li
                 key={menuItem.title}
-                className="xl:mr-8 md:mr-6 hover:text-cyan-300"
+                className="xl:mr-8 md:mr-6 text-slate-200 hover:text-cyan-300"
               >
                 <Link href={menuItem.link}>{menuItem.title}</Link>
               </li>
             ))}
             <li className="xl:mr-8 md:mr-6 hover:text-cyan-300">
-              <Button variant={"secondary"} asChild>
-                <Link href="/contact">Contact</Link>
+              <Button asChild>
+                <Link href="/contact" className="btn-primary">
+                  Contact
+                </Link>
               </Button>
             </li>
-            <li className="hidden md:flex">
+            {/* <li className="hidden md:flex">
               <ModeToggle />
-            </li>
+            </li> */}
           </ul>
         </nav>
       </header>
