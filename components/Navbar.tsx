@@ -77,7 +77,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="xl:mr-8 md:mr-6 hover:text-cyan-300">
-              <Button asChild>
+              <Button className="rounded-full" asChild>
                 <Link href="/contact" className="btn-primary">
                   Contact
                 </Link>

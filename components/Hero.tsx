@@ -30,12 +30,12 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex flex-col items-center md:flex-row">
-              <Button asChild>
+              <Button className="rounded-full" asChild>
                 <Link href="/about" className="btn-primary">
                   About Us
                 </Link>
               </Button>
-              <Button asChild>
+              <Button className="rounded-full" asChild>
                 <Link href="/contact" aria-label="" className="btn-primary">
                   Contact Us
                 </Link>
