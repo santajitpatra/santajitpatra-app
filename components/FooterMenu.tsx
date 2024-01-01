@@ -32,17 +32,19 @@ const FooterMenu = () => {
               <path d="M12.26 12.015h-.01c-.01 .13 -.12 .24 -.26 .24a0.263 .263 0 0 1 -.25 -.26c0 -.14 .11 -.25 .24 -.25h-.01c.13 -.01 .25 .11 .25 .24" />
             </svg>
           </span>
-          <span className="text-3xl font-bold">
-            Santajit<span className="text-primary-dark">Patra</span>
-          </span>
+          <h2 className="text-3xl font-bold text-white">
+            Santajit<span className="text-cyan-500">Patra</span>
+          </h2>
         </div>
         <div className="text-slate-400">
-          Expert web development and digital marketing solutions for
-          business success.
+          Expert web development and digital marketing solutions for business
+          success.
         </div>
       </div>
       <div className="">
-        <div className="mt-4 mb-2 font-medium text-lg xl:mb-4">GET STARTED</div>
+        <h3 className="mt-4 mb-2 font-medium text-lg xl:mb-4 text-white">
+          GET STARTED
+        </h3>
         <nav aria-label="Footer Navigation" className="">
           <ul className="space-y-3">
             <li>
@@ -78,7 +80,9 @@ const FooterMenu = () => {
         </nav>
       </div>
       <div>
-        <div className="mt-4 mb-2 font-medium text-lg xl:mb-4">LEGAL</div>
+        <h3 className="mt-4 mb-2 font-medium text-lg xl:mb-4 text-white">
+          LEGAL
+        </h3>
         <nav>
           <ul className="space-y-3">
             <li>
@@ -115,24 +119,36 @@ const FooterMenu = () => {
       </div>
 
       <div className="">
-        <div className="mt-4 mb-2 font-medium xl:mb-4">PRODUCTS</div>
+        <h3 className="mt-4 mb-2 pb-2 font-medium xl:mb-4 text-white">PRODUCTS</h3>
         <div className="flex flex-col">
-          <div className="mb-4">
+          <div className="">
             <div className="space-y-3">
-              <Image
-                src={appStore}
-                className="w-48 rounded"
-                alt="Picture of the author"
-                width={500}
-                height={500}
-              />
-              <Image
-                src={playStore}
-                className="w-48 rounded"
-                alt="Picture of the author"
-                width={500}
-                height={500}
-              />
+              <a
+                href="https://appstoreconnect.apple.com/login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={appStore}
+                  className="w-48 pb-5 rounded-lg"
+                  alt="Picture of the author"
+                  width={500}
+                  height={500}
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src={playStore}
+                  className="w-48 pb-5 rounded-lg"
+                  alt="Picture of the author"
+                  width={500}
+                  height={500}
+                />
+              </a>
             </div>
           </div>
         </div>
