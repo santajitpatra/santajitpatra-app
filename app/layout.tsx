@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import NextTopLoader from "nextjs-toploader";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <NextTopLoader color="#0e7490" height={4} showSpinner={false} />
 
         {children}
+        <Footer/>
         {/* </ThemeProvider> */}
       </body>
     </html>
