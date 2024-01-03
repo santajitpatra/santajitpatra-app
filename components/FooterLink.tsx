@@ -9,7 +9,7 @@ const FooterLink = () => {
         <div className="">
           © {currentYear} SantajitPatra | All Rights Reserved
         </div>
-        <div className="flex">
+        <div className="flex text-white">
           <a
             href="https://www.facebook.com/Santajit-Patra-191090504774038"
             className="mx-2  transition-colors duration-300 hover:text-cyan-300"

@@ -45,7 +45,7 @@ const Navbar = () => {
         </Link>
         <input type="checkbox" className="peer hidden" id="navbar-open" />
         <label
-          className="absolute top-5 right-7 cursor-pointer md:hidden"
+          className="absolute top-5 right-7 cursor-pointer text-white md:hidden"
           htmlFor="navbar-open"
         >
           <svg
@@ -71,7 +71,7 @@ const Navbar = () => {
             {menu.map((menuItem) => (
               <li
                 key={menuItem.title}
-                className="xl:mr-8 md:mr-6 text-slate-200 hover:text-cyan-300"
+                className="xl:mr-8 md:mr-6 text-white hover:text-cyan-300"
               >
                 <Link href={menuItem.link}>{menuItem.title}</Link>
               </li>
