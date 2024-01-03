@@ -3,7 +3,7 @@ import FooterLink from './FooterLink';
 
 const Footer = () => {
   return (
-    <div>
+    <div className=''>
       <div className="container mx-auto px-6 mb-12 md:px-12 xl:px-32">
         <div className="text-center">
           <div

@@ -32,41 +32,39 @@ const servicesData = [
 
 const ServicesOffer = () => {
   return (
-    <div>
-      <section className="">
-        <div className="mx-auto grid max-w-lg gap-x-8 gap-y-12 px-4 py-32 md:max-w-screen-xl md:grid-cols-2 md:px-8 lg:grid-cols-3 overflow-y-hidden">
-          <div className="p-12">
-            <h2 className="text-3xl font-medium text-white">
-              I HELP YOU TO
-              <br />
-              ACHIEVE YOUR GOALS
-            </h2>
-          </div>
-          {servicesData.map((data) => {
-            return (
-              <div
-                key={data.details}
-                className="relative w-[21rem] lg:w-72 xl:w-96 h-56 p-4 overflow-hidden bg-white shadow-lg rounded-2xl px-4 pt-14 pb-8 TA"
-              >
-                <Image
-                  alt="moto"
-                  src={webSvg}
-                  className="absolute w-40 h-40 mb-4 rounded-full -right-20 -bottom-8"
-                  width={500}
-                  height={500}
-                />
-                <div className="w-4/6">
-                  <p className="mb-2 text-xl font-medium text-slate-800">
-                    {data.service}
-                  </p>
-                  <p className="text-sm TEXTCOLOR">{data.details}</p>
-                </div>
-              </div>
-            );
-          })}
+    <section>
+      <div className="mx-auto grid max-w-lg gap-x-8 gap-y-12 px-4 py-32 md:max-w-screen-xl md:grid-cols-2 md:px-8 lg:grid-cols-3 overflow-y-hidden scrollbar-hide">
+        <div className="p-12">
+          <h2 className="text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
+            I HELP YOU TO
+            <br />
+            ACHIEVE YOUR GOALS
+          </h2>
         </div>
-      </section>
-    </div>
+        {servicesData.map((data) => {
+          return (
+            <div
+              key={data.details}
+              className="relative md:w-64 lg:w-64 xl:w-[22rem] xl:h-56 p-4 overflow-hidden bg-white shadow-lg rounded-2xl px-4 pt-14 pb-8 TA"
+            >
+              <Image
+                alt="moto"
+                src={webSvg}
+                className="absolute w-40 h-40 mb-4 rounded-full -right-20 -bottom-8"
+                width={500}
+                height={500}
+              />
+              <div className="w-4/6">
+                <p className="mb-2 text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
+                  {data.service}
+                </p>
+                <p className="text-sm text-slate-400">{data.details}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 

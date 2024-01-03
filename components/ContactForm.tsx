@@ -1,7 +1,7 @@
 import ContactDetalis from "./ContactDetalis";
 import MessageForm from "./MessageForm";
 
-const contactForm = () => {
+const ContactForm = () => {
   return (
     <div>
       <section className="mt-20">
@@ -16,4 +16,4 @@ const contactForm = () => {
   );
 };
 
-export default contactForm;
+export default ContactForm;

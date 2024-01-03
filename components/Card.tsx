@@ -43,7 +43,7 @@ const Card = () => {
   return (
     <div>
       <section className="py-20 ">
-        <h2 className="mb-12 text-center font-sans text-5xl font-bold text-cyan-500">
+        <h2 className="mb-12 text-center font-sans text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
           Let&apos;s Discover Categories
         </h2>
         <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-5 md:gap-6 p-5 sm:grid-cols-2 xl:grid-cols-4 overflow-y-hidden">

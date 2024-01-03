@@ -2,13 +2,13 @@
 function ContactDetalis() {
   return (
     <div className="lg:w-1/2 lg:mx-6">
-      <h2 className="text-3xl font-semibold capitalize lg:text-4xl text-primary-dark">
-        Let's talk
+      <h2 className="text-3xl font-semibold capitalize lg:text-4xl text-cyan-500">
+        Let&apos;s talk
       </h2>
-      <p className="max-w-xl mt-6 TEXTCOLOR">
+      <p className="max-w-xl mt-6 text-slate-400">
         Ask us everything and we would love to hear from you
       </p>
-      <div className="mt-6 space-y-8 md:mt-8 TEXTCOLOR">
+      <div className="mt-6 space-y-8 md:mt-8 text-slate-400">
         <p className="flex items-start -mx-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,14 +79,14 @@ function ContactDetalis() {
         </p>
       </div>
       <div className="mt-6 md:mt-8">
-        <h3 className="TEXTCOLOR">Follow us</h3>
+        <h3 className="text-slate-400">Follow us</h3>
         <div className="flex mt-4 -mx-1.5 ">
           <a
             className="mx-1.5  transition-colors duration-300 transform hover:text-blue-500"
             href="https://twitter.com/SantajitPatra"
           >
             <svg
-              className="w-10 h-10 fill-current TEXTCOLOR"
+              className="w-10 h-10 fill-current text-white hover:text-cyan-500"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ function ContactDetalis() {
             href="https://www.linkedin.com/in/santajit-patra-9136651b4/"
           >
             <svg
-              className="w-8 h-8 TEXTCOLOR"
+              className="w-8 h-8 text-white hover:text-cyan-500"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +120,7 @@ function ContactDetalis() {
             href="https://www.facebook.com/Santajit-Patra-191090504774038"
           >
             <svg
-              className="w-8 h-8 TEXTCOLOR"
+              className="w-8 h-8 text-white hover:text-cyan-500"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ function ContactDetalis() {
             href="https://www.instagram.com/santajitpatra/"
           >
             <svg
-              className="w-8 h-8 TEXTCOLOR"
+              className="w-8 h-8 text-white hover:text-cyan-500"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
