@@ -5,27 +5,31 @@ const ServicesCTA = () => {
     <div className="relative mx-auto w-full pb-32 pt-8 text-black">
       <div className="absolute inset-0 bottom-56 bg-slate-200" />
       <div className="relative pt-20 mx-auto w-full max-w-screen-xl px-2 text-left sm:px-10">
-        <div className="rounded-xl bg-slate-50 shadow-lg shadow-cyan-500 lg:flex">
+        <div className="rounded-xl bg-slate-50 shadow-3xl shadow-cyan-500 lg:flex">
           <div className="flex flex-col p-4 pb-6 sm:p-10 sm:pt-14 lg:w-2/5">
             <div className="flex-auto">
-              <h2 className="text-2xl font-black text-primary-dark">
+              <h2 className="text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
                 Keep Track of Your Projects from Start to Finish
               </h2>
-              <p className="pt-4 TEXTCOLOR">
+              <p className="pt-4 text-slate-400">
                 Create tasks, track time, share with colleagues, nd share
                 progress in real time.
               </p>
               <div className="mt-6 flex flex-wrap">
-                <p className="m-1 rounded-md TEXTCOLOR bg-gray-100 px-2 py-1 text-sm">
+                <p className="m-1 rounded-md text-violet-500 bg-violet-100
+                 px-2 py-1 text-sm">
                   Web development
                 </p>
-                <p className="m-1 rounded-md TEXTCOLOR bg-gray-100 px-2 py-1 text-sm">
+                <p className="m-1 rounded-md text-violet-500 bg-violet-100
+                 px-2 py-1 text-sm">
                   Graphic design
                 </p>
-                <p className="m-1 rounded-md TEXTCOLOR bg-gray-100 px-2 py-1 text-sm">
+                <p className="m-1 rounded-md text-violet-500 bg-violet-100
+                 px-2 py-1 text-sm">
                   Social media marketing
                 </p>
-                <p className="m-1 rounded-md TEXTCOLOR bg-gray-100 px-2 py-1 text-sm">
+                <p className="m-1 rounded-md text-violet-500 bg-violet-100
+                 px-2 py-1 text-sm">
                   Virtual assistance
                 </p>
               </div>

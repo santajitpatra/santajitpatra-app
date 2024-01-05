@@ -5,7 +5,7 @@ import wordpress from "/public/svg/wordpress.svg";
 function AboutInfo() {
   return (
     <section className="text-gray-200 pb-8 mt-20">
-      <div className="container max-w-6xl mx-auto m-8">
+      <div className="container mx-auto m-8">
         <div className="flex flex-wrap">
           <div className="w-full sm:w-1/2 p-6">
             <Image
