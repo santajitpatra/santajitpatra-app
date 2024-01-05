@@ -1,6 +1,6 @@
 
 
-const performance = () => {
+const Performance = () => {
   return (
     <div>
       <section className="y-10 leading-6 sm:py-16 lg:py-24">
@@ -69,4 +69,4 @@ const performance = () => {
   );
 }
 
-export default performance
+export default Performance

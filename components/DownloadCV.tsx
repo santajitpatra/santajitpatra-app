@@ -9,7 +9,7 @@ function DownloadCV() {
       <div className="w-full mb-4">
         <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t" />
       </div>
-      <p className="my-4 text-lg leading-normal TEXTCOLOR">
+      <p className="my-4 text-lg leading-normal text-slate-400">
         my CV provides a detailed overview of my skills and experience. <br />
         Click here to download my CV and learn more about me.
       </p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import selection from "../assets/svg/selection.svg";
-import wordpress from "../assets/svg/wordpress.svg";
+import selection from "/public/svg/selection.svg";
+import wordpress from "/public/svg/wordpress.svg";
 
 function AboutInfo() {
   return (
@@ -19,7 +19,7 @@ function AboutInfo() {
             <h3 className="text-3xl text-cyan-500 font-bold leading-none mb-3">
               Who am I ?
             </h3>
-            <p className="TEXTCOLOR mb-8">
+            <p className="text-slate-400 mb-8">
               I am a full stack developer with years of experience in building
               web applications. I have a strong understanding of both the
               front-end and back-end of web development, and I am proficient in
@@ -34,7 +34,7 @@ function AboutInfo() {
         </div>
         <div className="flex flex-wrap flex-col-reverse sm:flex-row">
           <div className="w-full sm:w-1/2 p-6 mt-6">
-            <div className="align-middle TEXTCOLOR">
+            <div className="align-middle text-slate-400">
               <h3 className="text-3xl text-cyan-500 font-bold leading-none mb-3">
                 What am I good at ?
               </h3>
