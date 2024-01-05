@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ServicesCTA = () => {
   return (
-    <div className="relative mx-auto w-full pb-32 pt-8 text-black">
+    <div className="relative mx-auto w-full pb-32 pt-8">
       <div className="absolute inset-0 bottom-56 bg-slate-200" />
       <div className="relative pt-20 mx-auto w-full max-w-screen-xl px-2 text-left sm:px-10">
         <div className="rounded-xl bg-slate-50 shadow-3xl shadow-cyan-500 lg:flex">

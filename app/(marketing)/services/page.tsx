@@ -3,7 +3,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Performance from "@/components/Performance";
 import ServicesCTA from "@/components/ServicesCTA";
 import ServicesOffer from "@/components/ServicesOffer";
-import React from "react";
+import Whatsapp from "@/components/Whatsapp";
 
 const page = () => {
   return (
@@ -19,7 +19,7 @@ const page = () => {
       <MaxWidthWrapper className="max-w-screen-2xl">
         <Performance />
       </MaxWidthWrapper>
-      {/* <Whatsapp /> */}
+      <Whatsapp />
     </div>
   );
 };

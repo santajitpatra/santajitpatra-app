@@ -86,14 +86,17 @@ const FooterMenu = () => {
         <nav>
           <ul className="space-y-3">
             <li>
-              <Link className="text-slate-400 hover:text-cyan-300" href="terms">
+              <Link
+                className="text-slate-400 hover:text-cyan-300"
+                href="terms-and-conditions"
+              >
                 Terms & Conditions
               </Link>
             </li>
             <li>
               <Link
                 className="text-slate-400 hover:text-cyan-300"
-                href="privacy"
+                href="privacy-policy"
               >
                 Privacy Policy
               </Link>
@@ -119,7 +122,9 @@ const FooterMenu = () => {
       </div>
 
       <div className="">
-        <h3 className="mt-4 mb-2 pb-2 font-medium xl:mb-4 text-white">PRODUCTS</h3>
+        <h3 className="mt-4 mb-2 pb-2 font-medium xl:mb-4 text-white">
+          PRODUCTS
+        </h3>
         <div className="flex flex-col">
           <div className="">
             <div className="space-y-3">

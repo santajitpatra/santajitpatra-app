@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import Header from "@/components/Header";
 import Map from "@/components/Map";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Whatsapp from "@/components/Whatsapp";
 
 const page = () => {
   return (
@@ -14,7 +15,7 @@ const page = () => {
         <ContactForm />
       </MaxWidthWrapper>
       <Map />
-      {/* <Whatsapp /> */}
+      <Whatsapp />
     </>
   );
 };

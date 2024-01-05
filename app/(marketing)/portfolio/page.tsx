@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import PortfolioCTA from "@/components/PortfolioCTA";
 import Project from "@/components/Project";
+import Whatsapp from "@/components/Whatsapp";
 import projectDB from "@/projectdb";
-import React from "react";
 
 const page = () => {
   return (
@@ -41,7 +41,7 @@ const page = () => {
         </div>
       </MaxWidthWrapper>
       <PortfolioCTA />
-      {/* <Whatsapp /> */}
+      <Whatsapp />
     </div>
   );
 };

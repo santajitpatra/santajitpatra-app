@@ -1,0 +1,26 @@
+.hading {
+  color: #fff;
+  font-size: 3rem /* 48px */;
+  line-height: 1;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.75rem /* 24px */;
+  line-height: 2.25rem /* 32px */;
+}
+
+p {
+  color: #fff;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  padding: 1rem /* 16px */;
+}
+address,
+a,
+h3,
+br,
+oi,
+li {
+  color: #fff;
+}

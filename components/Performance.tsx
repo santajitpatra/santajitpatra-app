@@ -34,7 +34,7 @@ const Performance = () => {
             return (
               <div
                 key={item.percentage}
-                className="relative overflow-hidden border-t-4 border-r-4 border-violet-500 bg-gradient-to-r from-cyan-600 to-cyan-400 shadow rounded-3xl"
+                className="relative overflow-hidden border-t-4 border-r-4 border-cyan-500 bg-gradient-to-r from-violet-600 to-violet-600 shadow rounded-3xl"
               >
                 <div className="px-6 py-10 md:px-2">
                   <div className="flex items-center">

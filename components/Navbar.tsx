@@ -6,6 +6,7 @@ const menu = [
   { title: "About", link: "/about" },
   { title: "Portfolio", link: "/portfolio" },
   { title: "Services", link: "/services" },
+  { title: "Contact", link: "/contact" },
 ];
 
 const Navbar = () => {
@@ -78,8 +79,8 @@ const Navbar = () => {
             ))}
             <li className="xl:mr-8 md:mr-6 hover:text-cyan-300">
               <Button className="rounded-full" asChild>
-                <Link href="/contact" className="btn-primary">
-                  Contact
+                <Link href="/sign-in" className="btn-primary">
+                  Sign In
                 </Link>
               </Button>
             </li>

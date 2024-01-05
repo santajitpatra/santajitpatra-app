@@ -2,7 +2,7 @@ import AboutInfo from '@/components/AboutInfo';
 import DownloadCV from '@/components/DownloadCV';
 import Header from '@/components/Header';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
-import React from 'react'
+import Whatsapp from '@/components/Whatsapp';
 
 const page = () => {
   return (
@@ -16,7 +16,7 @@ const page = () => {
         <DownloadCV />
       </MaxWidthWrapper>
 
-      {/* <Whatsapp /> */}
+      <Whatsapp />
     </>
   );
 }
