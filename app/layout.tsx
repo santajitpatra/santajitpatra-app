@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
 import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+          `}
+        </Script>
+      </head>
       <body className={`bg-[#0a162f] ${inter.className}`}>
         {/* <ThemeProvider
           attribute="class"
@@ -31,7 +46,7 @@ export default function RootLayout({
         <NextTopLoader color="#0e7490" height={4} showSpinner={false} />
 
         {children}
-        <Footer/>
+        <Footer />
         {/* </ThemeProvider> */}
       </body>
     </html>
