@@ -112,7 +112,7 @@ const FooterMenu = () => {
             <li>
               <Link
                 className="text-slate-400 hover:text-cyan-300"
-                href="sitemap"
+                href="sitemap.xml"
               >
                 sitemap
               </Link>
