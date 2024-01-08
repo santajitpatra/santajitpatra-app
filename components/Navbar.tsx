@@ -66,7 +66,7 @@ const Navbar = () => {
         </label>
         <nav
           aria-label="Header Navigation"
-          className="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56 md:ml-24 md:max-h-full md:flex-row md:items-start"
+          className="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56  md:ml-14 lg:ml-24 md:max-h-full md:flex-row md:items-start"
         >
           <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
             {menu.map((menuItem) => (
@@ -78,7 +78,7 @@ const Navbar = () => {
               </li>
             ))}
             <li className="xl:mr-8 md:mr-6 hover:text-cyan-300">
-              <Button className="rounded-full" asChild>
+              <Button className="rounded-full w-24" asChild>
                 <Link href="/sign-in" className="btn-primary">
                   Sign In
                 </Link>

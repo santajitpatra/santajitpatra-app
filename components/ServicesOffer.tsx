@@ -58,7 +58,7 @@ const ServicesOffer = () => {
                 <p className="mb-2 text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
                   {data.service}
                 </p>
-                <p className="text-sm text-slate-400">{data.details}</p>
+                <p className="text-sm text-slate-500">{data.details}</p>
               </div>
             </div>
           );

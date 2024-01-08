@@ -11,7 +11,7 @@ const PortfolioCTA = () => {
               Let&#39;s connect and talk
             </h2>
             <div className="max-w-3xl items-center mx-auto px-2 mt-4 sm:flex sm:justify-center">
-              <p className="mt-4 text-slate-400 text-lg">
+              <p className="mt-4 text-slate-500 text-lg">
                 Interested in learning more about my services or discussing your
                 project needs? Don&#39;t hesitate to contact me today. I&#39;m
                 always available to answer any questions you may have and

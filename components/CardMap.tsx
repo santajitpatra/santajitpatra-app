@@ -17,7 +17,7 @@ function CardMap({ title, description, type, image, button }: any) {
         <p className="mb-2 text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
           {title}
         </p>
-        <p className="text-sm line-clamp-3 text-slate-400">{description}</p>
+        <p className="text-sm line-clamp-3 text-slate-500">{description}</p>
         <div className="justify-center mt-4 flex flex-wrap items-center">
           <Button className="rounded-full" asChild>
             <Link href="/about" className="btn-primary">

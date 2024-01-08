@@ -11,8 +11,8 @@ const ServicesCTA = () => {
               <h2 className="text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
                 Keep Track of Your Projects from Start to Finish
               </h2>
-              <p className="pt-4 text-slate-400">
-                Create tasks, track time, share with colleagues, nd share
+              <p className="pt-4 text-slate-500">
+                Create tasks, track time, share with colleagues, and share
                 progress in real time.
               </p>
               <div className="mt-6 flex flex-wrap">
