@@ -33,6 +33,23 @@ export default function RootLayout({
           name="google-site-verification"
           content={`${process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}`}
         />
+        <meta
+          name="msvalidate.01"
+          content={`${process.env.NEXT_PUBLIC_MS_VERIFICATION}`}
+        />
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
+          `}
+        </Script>
       </head>
       <body className={`bg-[#0a162f] ${inter.className}`}>
         {/* Google Tag Manager (noscript)  */}
