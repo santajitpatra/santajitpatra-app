@@ -3,6 +3,11 @@ import Header from "@/components/Header";
 import Map from "@/components/Map";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Whatsapp from "@/components/Whatsapp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+};
 
 const page = () => {
   return (

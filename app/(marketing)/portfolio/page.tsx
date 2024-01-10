@@ -4,6 +4,12 @@ import PortfolioCTA from "@/components/PortfolioCTA";
 import Project from "@/components/Project";
 import Whatsapp from "@/components/Whatsapp";
 import projectDB from "@/projectdb";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Portfolio",
+};
+
 
 const page = () => {
   return (

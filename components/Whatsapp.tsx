@@ -32,9 +32,12 @@ const Whatsapp = () => {
         className=" m-auto "
         target="_blank"
         rel="noreferrer"
-        
+        aria-label="Contact Us on WhatsApp"
       >
-        <FaWhatsapp className="text-white w-10 h-10"/>
+        <FaWhatsapp
+          className="text-white w-10 h-10"
+          alt="Contact Us on WhatsApp"
+        />
       </a>
     </div>
   );

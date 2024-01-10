@@ -15,7 +15,10 @@ export function customMetadata({
   noIndex?: boolean;
 } = {}): Metadata {
   return {
-    title,
+    title :{
+      default: title,
+      template: "%s - Santajit Patra",
+    },
     description,
     openGraph: {
       title,
@@ -36,11 +39,11 @@ export function customMetadata({
     icons,
     metadataBase: new URL("https://santajitpatra.vercel.app"),
     themeColor: "#FFF",
-    ...(noIndex && {
-      robots: {
-        index: false,
-        follow: false,
-      },
-    }),
+    // ...(noIndex && {
+    //   robots: {
+    //     index: false,
+    //     follow: false,
+    //   },
+    // }),
   };
 }

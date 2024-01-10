@@ -3,6 +3,12 @@ import DownloadCV from '@/components/DownloadCV';
 import Header from '@/components/Header';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Whatsapp from '@/components/Whatsapp';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About',
+}
+
 
 const page = () => {
   return (

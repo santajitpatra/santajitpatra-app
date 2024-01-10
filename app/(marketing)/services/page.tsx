@@ -4,6 +4,12 @@ import Performance from "@/components/Performance";
 import ServicesCTA from "@/components/ServicesCTA";
 import ServicesOffer from "@/components/ServicesOffer";
 import Whatsapp from "@/components/Whatsapp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+};
+
 
 const page = () => {
   return (
