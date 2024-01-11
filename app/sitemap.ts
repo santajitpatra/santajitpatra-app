@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
+  
+export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL! || "";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://santajitpatra.vercel.app";
 
   return [
     {

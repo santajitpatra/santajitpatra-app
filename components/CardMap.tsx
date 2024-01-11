@@ -4,9 +4,9 @@ import { Button } from "./ui/button";
 
 function CardMap({ title, description, type, image, button }: any) {
   return (
-    <article className="bg-white h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-3xl pb-2 shadow-lg transition-transform duration-200 TA">
+    <div className="bg-white h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-3xl pb-2 transition-transform duration-200 TA ">
       <Image
-        className="max-h-40 w-full object-cover"
+        className="max-h-40 w-full object-cover overflow-hidden rounded-t-3xl TA"
         alt="featured image"
         src={image}
         width={500}
@@ -26,7 +26,7 @@ function CardMap({ title, description, type, image, button }: any) {
           </Button>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
 

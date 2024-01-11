@@ -33,7 +33,7 @@ const servicesData = [
 const ServicesOffer = () => {
   return (
     <section>
-      <div className="mx-auto grid max-w-lg gap-x-8 gap-y-12 px-4 py-32 md:max-w-screen-xl md:grid-cols-2 md:px-8 lg:grid-cols-3 overflow-y-hidden scrollbar-hide">
+      <div className="mx-auto grid max-w-lg gap-x-8 gap-y-12 px-4 py-4 md:py-20 md:max-w-screen-xl md:grid-cols-2 md:px-8 lg:grid-cols-3 overflow-y-hidden scrollbar-hide">
         <div className="p-12">
           <h2 className="text-2xl font-medium bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
             I HELP YOU TO

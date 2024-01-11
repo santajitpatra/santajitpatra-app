@@ -1,3 +1,4 @@
+import { baseUrl } from "@/app/sitemap";
 import { Metadata } from "next";
 
 // metadata
@@ -37,7 +38,7 @@ export function customMetadata({
       creator: "@santajitpatra",
     },
     icons,
-    metadataBase: new URL("https://santajitpatra.vercel.app"),
+    metadataBase: new URL(`${baseUrl}`),
     themeColor: "#FFF",
     // ...(noIndex && {
     //   robots: {

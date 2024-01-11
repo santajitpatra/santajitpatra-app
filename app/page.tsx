@@ -12,14 +12,21 @@ const Home = () => {
     <>
       <MaxWidthWrapper className="max-w-screen-2xl">
         <Hero />
-        <Card />
+        <div className="lg:my-20">
+          <h2 className="mb-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
+            Let&apos;s Discover Categories
+          </h2>
+          <Card />
+        </div>
         <MarqueeSection />
-        <CTA />
-        <h2 className="mb-12 text-center font-sans text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
+        <div className="my-20">
+          <CTA />
+        </div>
+        <h2 className="mb-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
           Services Offered
         </h2>
         <ServicesOffer />
-        <h2 className="mb-12 text-center font-sans text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
+        <h2 className="mb-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
           Contact Us
         </h2>
         <ContactForm />
