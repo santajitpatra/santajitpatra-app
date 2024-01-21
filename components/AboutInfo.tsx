@@ -4,7 +4,7 @@ import wordpress from "/public/svg/wordpress.svg";
 
 function AboutInfo() {
   return (
-    <section className="text-gray-200 pb-8 mt-20">
+    <section className="text-gray-200 mt-20">
       <div className="container mx-auto m-8">
         <div className="flex flex-wrap">
           <div className="w-full sm:w-1/2 p-6">
@@ -42,12 +42,13 @@ function AboutInfo() {
                 I have a strong understanding of the following skills:
               </p>
               <ul className="space-y-1">
-                <li>Programming Languages: JavaScript, TypeScript</li>
                 <li>
                   Front-end development: HTML, CSS, JavaScript, React, Vue.js
                 </li>
-                <li>Back-end development: Node.js, express.js, PHP </li>
-                <li>Databases: MySQL, PostgreSQL, MongoDB</li>
+                <li>
+                  Back-end development: Node.js, express.js, kafka, Next Auth
+                </li>
+                <li>Databases: MySQL, PostgreSQL, MongoDB, Redis</li>
                 <li>Version control: Git, GitHub</li>
                 <li>Web hosting: AWS, Google Cloud Platform and other</li>
                 <li>
