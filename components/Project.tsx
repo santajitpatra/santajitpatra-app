@@ -2,18 +2,10 @@ import React from "react";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { ProjectItem } from "@/types";
 
-interface ProjectProps {
-  title: string;
-  description: string;
-  name: string;
-  about: string;
-  image?: string;
-  button: string;
-  buttonSource: string;
-}
 
-const Project: React.FC<ProjectProps> = ({
+const Project: React.FC<ProjectItem> = ({
   title,
   description,
   name,

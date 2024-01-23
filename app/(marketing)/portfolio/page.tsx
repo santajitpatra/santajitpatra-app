@@ -3,7 +3,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import PortfolioCTA from "@/components/PortfolioCTA";
 import Project from "@/components/Project";
 import Whatsapp from "@/components/Whatsapp";
-import projectDB from "@/projectdb";
+import { projectConfig } from "@/config/project";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ const page = () => {
       <MaxWidthWrapper className="max-w-screen-2xl">
         <div className="container my-24 px-6 mx-auto">
           <div className="flex flex-col ">
-            {projectDB.map(
+            {projectConfig.projectItems.map(
               ({
                 title,
                 description,
