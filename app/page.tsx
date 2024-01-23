@@ -1,6 +1,7 @@
 import CTA from "@/components/CTA";
 import Card from "@/components/Card";
 import ContactForm from "@/components/ContactForm";
+import Slider from "@/components/HeaderSlide/Slider";
 import Hero from "@/components/Hero";
 import MarqueeSection from "@/components/MarqueeSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
@@ -10,6 +11,7 @@ import Whatsapp from "@/components/Whatsapp";
 const Home = () => {
   return (
     <>
+      {/* <Slider /> */}
       <MaxWidthWrapper className="max-w-screen-2xl">
         <Hero />
         <div className="lg:my-20">
