@@ -12,7 +12,7 @@ const menu = [
 const Navbar = () => {
   return (
     <div>
-      <header className="relative flex w-screen max-w-screen-xl flex-col overflow-hidden sm:px-4 lg:px-0 py-4 md:mx-auto md:flex-row md:items-center">
+      <header className="z-50 relative flex w-screen max-w-screen-xl flex-col overflow-hidden sm:px-4 lg:px-0 py-4 md:mx-auto md:flex-row md:items-center">
         <Link
           href="/"
           className="flex cursor-pointer items-center whitespace-nowrap text-2xl font-black"

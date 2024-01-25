@@ -18,10 +18,7 @@ const Project: React.FC<ProjectItem> = ({
     <div className="flex py-7 px-7 pr-4 border-b cursor-pointer transition duration-200 ease-out first:border-t bg-white rounded-3xl mb-10 flex-col sm:flex-row">
       <div className="relative">
         <Image
-          src={
-            image ||
-            "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-          }
+          src={image || "/code.jpg"}
           alt="Picture of the author"
           width={500}
           height={380}
@@ -33,7 +30,9 @@ const Project: React.FC<ProjectItem> = ({
         <h3 className="text-2xl font-semibold bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent">
           {title}
         </h3>
-        <p className="text-sm text-slate-500 mt-5 line-clamp-2">{description}</p>
+        <p className="text-sm text-slate-500 mt-5 line-clamp-2">
+          {description}
+        </p>
         <h4 className="mt-6 text-lg font-medium text-cyan-500">{name}</h4>
         <p className="text-sm text-slate-500 mt-5">{about}</p>
         <div className="border-b w-10 pt-2" />

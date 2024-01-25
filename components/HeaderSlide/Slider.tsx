@@ -1,104 +1,53 @@
+'use client';
+import { homeConfig } from "@/config/home";
+import { Button } from "../ui/button";
 import "./style.css";
-export default function Slider() {
+// import "./index";
+
+
+const Slider = () => {
   return (
-    <div className="slider">
-      {/* list Items */}
+    <div className="carousel">
+      {/* list item */}
+
       <div className="list">
-        <div className="item active">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">
-            <p>design</p>
-            <h2>Slider 01</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ipsum, ex.
-            </p>
+        {homeConfig.map((item) => (
+          <div className="item" key={item.id}>
+            <img src={item.image} alt={item.title} />
+            <div className="content">
+              {/* <div className="author">{item.about}</div> */}
+              <div className="title">{item.title}</div>
+              {/* <div className="topic">{item.about}</div> */}
+              <div className="des">{item.description}</div>
+              <div className="buttons">
+                <Button className="btn-primary">SEE MORE</Button>
+                <Button className="btn-primary">SUBSCRIBE</Button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">
-            <p>design</p>
-            <h2>Slider 02</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ipsum, ex.
-            </p>
-          </div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">
-            <p>design</p>
-            <h2>Slider 03</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ipsum, ex.
-            </p>
-          </div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">
-            <p>design</p>
-            <h2>Slider 04</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ipsum, ex.
-            </p>
-          </div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">
-            <p>design</p>
-            <h2>Slider 05</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-              neque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Ipsum, ex.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
-      {/* button arrows */}
+      {/* list thumnail */}
+      <div className="thumbnail">
+        {homeConfig.map((item) => (
+          <div className="item" key={item.id}>
+            <img src={item.image} alt={item.title} />
+            <div className="content">
+              <div className="title">{item.title}</div>
+              {/* <div className="description">{item.description}</div> */}
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* next prev */}
       <div className="arrows">
-        {/* <button ref={nextRef} onClick={handleNextClick} id="next">
-          &lt;
-        </button>
-        <button ref={prevRef} onClick={handlePrevClick} id="prev">
-          &gt;
-        </button> */}
         <button id="prev">&lt;</button>
         <button id="next">&gt;</button>
       </div>
-      {/* thumbnail */}
-      <div className="thumbnail">
-        <div className="item active">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">Name Slider</div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">Name Slider</div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">Name Slider</div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">Name Slider</div>
-        </div>
-        <div className="item">
-          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1551&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <div className="content">Name Slider</div>
-        </div>
-      </div>
+      {/* time running */}
+      <div className="time" />
     </div>
   );
-}
+};
+
+export default Slider;

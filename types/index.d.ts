@@ -24,3 +24,13 @@ export type ProjectItem = {
 export type ProjectConfig = {
   projectItems: ProjectItem[];
 };
+
+
+// HOME CONFIG
+export type HomeConfig = {
+  id: number;
+  title: string;
+  about: string;
+  description: string;
+  image: string;
+};
