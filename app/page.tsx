@@ -11,9 +11,9 @@ import Whatsapp from "@/components/Whatsapp";
 const Home = () => {
   return (
     <>
-      {/* <Slider /> */}
+      <Slider />
       <MaxWidthWrapper className="max-w-screen-2xl">
-        <Hero />
+        {/* <Hero /> */}
         <div className="lg:my-20">
           <h2 className="mb-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
             Let&apos;s Discover Categories

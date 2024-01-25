@@ -19,10 +19,13 @@ nextDom.onclick = function () {
 prevDom.onclick = function () {
   showSlider("prev");
 };
+
 let runTimeOut;
 let runNextAuto = setTimeout(() => {
   next.click();
 }, timeAutoNext);
+
+
 function showSlider(type) {
   let SliderItemsDom = SliderDom.querySelectorAll(".carousel .list .item");
   let thumbnailItemsDom = document.querySelectorAll(

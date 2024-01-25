@@ -4,10 +4,10 @@ export const homeConfig: HomeConfig[] = [
   {
     id: 1,
     title: "Connector",
-    about: "Santajit ",
+    about: "Santajit",
     description:
       "This is a web application that helps you find out if your birthday is lucky or not. The app takes in your birthdate and a lucky number and calculates whether the sum of the digits in your birthdate is divisible by the lucky number. If it is, the app declares your birthday as lucky!",
-    image: "/hotflix.png",
+    image: "/slide/slide1.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "This is a web application that helps you find out if your birthday is lucky or not. The app takes in your birthdate and a lucky number and calculates whether the sum of the digits in your birthdate is divisible by the lucky number. If it is, the app declares your birthday as lucky!",
-    image: "/connector.png",
+    image: "/slide/slide2.jpg",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "This is a web application that helps you find out if your birthday is lucky or not. The app takes in your birthdate and a lucky number and calculates whether the sum of the digits in your birthdate is divisible by the lucky number. If it is, the app declares your birthday as lucky!",
-    image: "/connector.png",
+    image: "/slide/slide3.jpg",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "This is a web application that helps you find out if your birthday is lucky or not. The app takes in your birthdate and a lucky number and calculates whether the sum of the digits in your birthdate is divisible by the lucky number. If it is, the app declares your birthday as lucky!",
-    image: "/connector.png",
+    image: "/slide/slide4.jpg",
   },
   {
     id: 5,
@@ -39,6 +39,14 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "This is a web application that helps you find out if your birthday is lucky or not. The app takes in your birthdate and a lucky number and calculates whether the sum of the digits in your birthdate is divisible by the lucky number. If it is, the app declares your birthday as lucky!",
-    image: "/connector.png",
+    image: "/slide/slide5.jpg",
+  },
+  {
+    id: 6,
+    title: "Connector",
+    about: "Santajit ",
+    description:
+      "This is a web application that helps you find out if your birthday is lucky or not. The app takes in your birthdate and a lucky number and calculates whether the sum of the digits in your birthdate is divisible by the lucky number. If it is, the app declares your birthday as lucky!",
+    image: "/slide/slide6.jpg",
   },
 ];
