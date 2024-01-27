@@ -4,15 +4,26 @@ import { Button } from "../ui/button";
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
 
-
 const Slider: React.FC = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const thumbnailBorderRef = useRef<HTMLDivElement | null>(null);
+  // Add your variable declarations here
+  const timeRunning = 7000;
+  const timeAutoNext = 10000;
+  let runTimeOut: NodeJS.Timeout;
+  let runNextAuto: NodeJS.Timeout;
+
+ 
 
   useEffect(() => {
     // Initialize carousel styles or animations on mount
     // (e.g., set initial widths, hide overflow, etc.)
+    let autoSlideInterval = startAutoSlide();
+
+    return () => {
+      clearInterval(autoSlideInterval);
+    };
   }, []);
 
   const handleNextClick = () => {
@@ -27,7 +38,20 @@ const Slider: React.FC = () => {
     showSlider("prev");
   };
 
- 
+  const startAutoSlide = () => {
+    return setInterval(() => {
+      handleNextClick();
+    }, timeAutoNext);
+  };
+
+  const handleManualInteraction = () => {
+    // Clear the existing timeout and interval when the user interacts manually
+    clearTimeout(runTimeOut);
+    clearInterval(runNextAuto);
+
+    // Add your logic for resetting timers or stopping automatic slide change here
+  };
+
   const showSlider = (type: "next" | "prev") => {
     const sliderDom = sliderRef.current;
     const thumbnailBorderDom = thumbnailBorderRef.current;
@@ -50,11 +74,22 @@ const Slider: React.FC = () => {
         sliderDom.classList.add("prev");
       }
     }
+    // Clear the existing timeout and interval when the user interacts manually
+    clearTimeout(runTimeOut);
+    clearInterval(runNextAuto);
+
+    // Start a new timeout for hiding the "next" or "prev" class after a certain time
+    runTimeOut = setTimeout(() => {
+      sliderDom?.classList.remove("next");
+      sliderDom?.classList.remove("prev");
+    }, timeRunning);
+
+    // Start a new interval for automatic slide change
+    runNextAuto = startAutoSlide();
   };
 
-
   return (
-    <div className="carousel">
+    <div className="carousel" onMouseEnter={handleManualInteraction}>
       {/* list item */}
       <div ref={sliderRef} className="list">
         {homeConfig.map((slide, index) => (
