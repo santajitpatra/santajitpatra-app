@@ -14,8 +14,6 @@ const Slider: React.FC = () => {
   let runTimeOut: NodeJS.Timeout;
   let runNextAuto: NodeJS.Timeout;
 
- 
-
   useEffect(() => {
     // Initialize carousel styles or animations on mount
     // (e.g., set initial widths, hide overflow, etc.)
@@ -119,8 +117,12 @@ const Slider: React.FC = () => {
       </div>
       {/* next prev */}
       <div className="arrows">
-        <button onClick={handlePrevClick}>Prev</button>
-        <button onClick={handleNextClick}>Next</button>
+        <button id="prev" onClick={handlePrevClick}>
+          Prev
+        </button>
+        <button id="next" onClick={handleNextClick}>
+          Next
+        </button>
       </div>
       {/* time running */}
       <div className="time" />
