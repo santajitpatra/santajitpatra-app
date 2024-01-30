@@ -94,8 +94,10 @@ const Slider: React.FC = () => {
           <div className="item" key={slide.id}>
             <img src={slide.image} alt={slide.title} />
             <div className="content">
-              <div className="title">{slide.title}</div>
-              <div className="des">{slide.description}</div>
+              <div className="title text-cyan-400">
+                {slide.title}
+              </div>
+              <div className="des text-slate-200">{slide.description}</div>
               <div className="buttons">
                 <Button className="btn-primary">SEE MORE</Button>
                 <Button className="btn-primary">SUBSCRIBE</Button>
