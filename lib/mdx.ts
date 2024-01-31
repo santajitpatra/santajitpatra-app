@@ -2,12 +2,12 @@ import fs from "fs";
 import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
 
-const rootDirectory = path.join(process.cwd(), "content");
+const rootDirectory = path.join(process.cwd(), "content", "blog");
 
 
 export const getPostBySlug = async (slug: string) => {
   const realSlug = slug.replace(/\\.mdx$/, "");
-  const filePath = path.join(rootDirectory, `${realSlug}.mdx`);
+  const filePath = path.join(rootDirectory, `${realSlug}`);
 
   const fileContent = fs.readFileSync(filePath, { encoding: "utf8" });
   const { frontmatter, content } = await compileMDX({

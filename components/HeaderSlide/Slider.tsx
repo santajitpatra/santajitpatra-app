@@ -14,16 +14,6 @@ const Slider: React.FC = () => {
   let runTimeOut: NodeJS.Timeout;
   let runNextAuto: NodeJS.Timeout;
 
-  useEffect(() => {
-    // Initialize carousel styles or animations on mount
-    // (e.g., set initial widths, hide overflow, etc.)
-    let autoSlideInterval = startAutoSlide();
-
-    return () => {
-      clearInterval(autoSlideInterval);
-    };
-  }, []);
-
   const handleNextClick = () => {
     setCurrentSlideIndex((prevIndex) => (prevIndex + 1) % homeConfig.length);
     showSlider("next");
@@ -41,6 +31,16 @@ const Slider: React.FC = () => {
       handleNextClick();
     }, timeAutoNext);
   };
+
+   useEffect(() => {
+     // Initialize carousel styles or animations on mount
+     // (e.g., set initial widths, hide overflow, etc.)
+     let autoSlideInterval = startAutoSlide();
+
+     return () => {
+       clearInterval(autoSlideInterval);
+     };
+   }, []);
 
   const handleManualInteraction = () => {
     // Clear the existing timeout and interval when the user interacts manually
@@ -97,7 +97,7 @@ const Slider: React.FC = () => {
               <div className="title text-cyan-400">
                 {slide.title}
               </div>
-              <div className="des text-slate-200">{slide.description}</div>
+              <div className="des text-slate-2y00">{slide.description}</div>
               <div className="buttons">
                 <Button className="btn-primary">SEE MORE</Button>
                 <Button className="btn-primary">SUBSCRIBE</Button>

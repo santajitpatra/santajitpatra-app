@@ -23,7 +23,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide3.jpg",
+    image: "/slide/slide4.jpg",
   },
   {
     id: 4,
@@ -31,18 +31,10 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide4.jpg",
-  },
-  {
-    id: 5,
-    title: "Let's Do It",
-    about: "Santajit ",
-    description:
-      "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
     image: "/slide/slide5.jpg",
   },
   {
-    id: 6,
+    id: 5,
     title: "Let's Do It",
     about: "Santajit ",
     description:
