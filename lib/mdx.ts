@@ -6,10 +6,11 @@ const rootDirectory = path.join(process.cwd(), "content", "blog");
 
 
 export const getPostBySlug = async (slug: string) => {
-  const realSlug = slug.replace(/\\.mdx$/, "");
+  const realSlug = slug.replace(/\$/, "");
   const filePath = path.join(rootDirectory, `${realSlug}`);
 
   const fileContent = fs.readFileSync(filePath, { encoding: "utf8" });
+  
   const { frontmatter, content } = await compileMDX({
     source: fileContent,
     options: { parseFrontmatter: true },
@@ -20,6 +21,7 @@ export const getPostBySlug = async (slug: string) => {
 
 export const getAllPostsMeta = async () => {
   const files = fs.readdirSync(rootDirectory);
+  
   let posts = [];
 
   for (const file of files) {
