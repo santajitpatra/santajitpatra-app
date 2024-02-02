@@ -1,19 +1,17 @@
 import CTA from "@/components/CTA";
 import Card from "@/components/Card";
 import ContactForm from "@/components/ContactForm";
-import Slider from "@/components/HeaderSlide/Slider";
-import Hero from "@/components/Hero";
 import MarqueeSection from "@/components/MarqueeSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ServicesOffer from "@/components/ServicesOffer";
 import Whatsapp from "@/components/Whatsapp";
+import HeaderSlide from "@/components/Slider/Slider";
 
 const Home = () => {
   return (
     <>
-      <Slider />
+      <HeaderSlide />
       <MaxWidthWrapper className="max-w-screen-2xl">
-        {/* <Hero /> */}
         <div className="lg:my-20">
           <h2 className="mb-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
             Let&apos;s Discover Categories

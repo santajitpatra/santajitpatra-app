@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
 
-const Slider: React.FC = () => {
+const HeaderSlide: React.FC = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const thumbnailBorderRef = useRef<HTMLDivElement | null>(null);
@@ -32,15 +32,15 @@ const Slider: React.FC = () => {
     }, timeAutoNext);
   };
 
-   useEffect(() => {
-     // Initialize carousel styles or animations on mount
-     // (e.g., set initial widths, hide overflow, etc.)
-     let autoSlideInterval = startAutoSlide();
+  useEffect(() => {
+    // Initialize carousel styles or animations on mount
+    // (e.g., set initial widths, hide overflow, etc.)
+    let autoSlideInterval = startAutoSlide();
 
-     return () => {
-       clearInterval(autoSlideInterval);
-     };
-   }, []);
+    return () => {
+      clearInterval(autoSlideInterval);
+    };
+  }, []);
 
   const handleManualInteraction = () => {
     // Clear the existing timeout and interval when the user interacts manually
@@ -94,9 +94,7 @@ const Slider: React.FC = () => {
           <div className="item" key={slide.id}>
             <img src={slide.image} alt={slide.title} />
             <div className="content">
-              <div className="title text-cyan-400">
-                {slide.title}
-              </div>
+              <div className="title text-cyan-400">{slide.title}</div>
               <div className="des text-slate-2y00">{slide.description}</div>
               <div className="buttons">
                 <Button className="btn-primary">SEE MORE</Button>
@@ -132,4 +130,4 @@ const Slider: React.FC = () => {
   );
 };
 
-export default Slider;
+export default HeaderSlide;

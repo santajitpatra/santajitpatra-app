@@ -17,9 +17,6 @@ const Page = () => {
       />
 
       <MaxWidthWrapper className="py-20 min-h-screen">
-        {/* <h2 className="mb-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
-          All Posts
-        </h2> */}
         <div className="py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {postPreviews}
         </div>

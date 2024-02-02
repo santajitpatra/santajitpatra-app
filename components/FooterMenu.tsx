@@ -56,8 +56,8 @@ const FooterMenu = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-slate-400 hover:text-cyan-300" href="/blog">
-                Blog
+              <Link className="text-slate-400 hover:text-cyan-300" href="/blogs">
+                Blogs
               </Link>
             </li>
             <li>

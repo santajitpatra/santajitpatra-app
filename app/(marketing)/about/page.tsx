@@ -14,14 +14,10 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      {/* <Header
-        title="About"
-        bg='url("https://images.unsplash.com/photo-1523289333742-be1143f6b766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")'
-      /> */}
       <MaxWidthWrapper className="max-w-screen-2xl">
         <Hero />
-        <h2 className="my-12 text-center font-sans text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
-          About
+        <h2 className="pt-32 pb-16 text-center font-sans text-4xl md:text-7xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-400 bg-clip-text text-transparent">
+          Know Me Better: Ask Away!
         </h2>
         <AboutInfo />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-5 md:pb-10 mt-5 md:p-0">

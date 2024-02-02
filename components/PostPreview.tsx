@@ -10,7 +10,7 @@ const PostPreview = (props: PostMeta) => {
         className="relative p-8 rounded-2xl shadow-lg bg-white w-full h-56 flex flex-col"
         style={{ minHeight: "200px" }}
       >
-        <h3 className="text-xl font-semibold text-violet-600 hover:underline mb-4">
+        <h3 className="text-xl font-semibold bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent hover:underline mb-4 ">
           {props?.title}
         </h3>
         <p className="text-slate-600">{props.description}</p>

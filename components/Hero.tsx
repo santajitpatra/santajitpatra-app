@@ -36,8 +36,8 @@ const Hero = () => {
             </div>
             <div className="flex flex-col items-center md:flex-row">
               <Button className="rounded-full" asChild>
-                <Link href="/about" className="btn-primary">
-                  About Us
+                <Link href="/" className="btn-primary">
+                  Go To Home
                 </Link>
               </Button>
               <Button className="rounded-full" asChild>
