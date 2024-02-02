@@ -5,6 +5,7 @@ import { ModeToggle } from "./ModeToggle";
 const menu = [
   { title: "About", link: "/about" },
   { title: "Portfolio", link: "/portfolio" },
+  { title: "Blogs", link: "/blogs" },
   { title: "Services", link: "/services" },
   { title: "Contact", link: "/contact" },
 ];
@@ -46,7 +47,7 @@ const Navbar = () => {
         </Link>
         <input type="checkbox" className="peer hidden" id="navbar-open" />
         <label
-          className="absolute top-5 right-7 cursor-pointer text-white md:hidden"
+          className="absolute top-5 right-7 cursor-pointer text-white lg:hidden"
           htmlFor="navbar-open"
         >
           <svg
@@ -66,7 +67,7 @@ const Navbar = () => {
         </label>
         <nav
           aria-label="Header Navigation"
-          className="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56  md:ml-14 lg:ml-24 md:max-h-full md:flex-row md:items-start"
+          className="flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all peer-checked:mt-8 peer-checked:max-h-56  lg:ml-24 lg:max-h-full"
         >
           <ul className="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
             {menu.map((menuItem) => (

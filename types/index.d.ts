@@ -25,7 +25,6 @@ export type ProjectConfig = {
   projectItems: ProjectItem[];
 };
 
-
 // HOME CONFIG
 export type HomeConfig = {
   id: number;
@@ -36,9 +35,9 @@ export type HomeConfig = {
 };
 
 // POST METADATA INTERFACE
-export interface PostMetadata {
-  title: string;
-  date: string;
-  description: string;
+export interface PostMeta {
   slug: string;
+  title: string;
+  description: string;
+  date: string;
 }

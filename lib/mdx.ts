@@ -1,32 +1,40 @@
+import { PostMeta } from "@/types";
 import fs from "fs";
+import matter from "gray-matter";
 import path from "path";
-import { compileMDX } from "next-mdx-remote/rsc";
 
-const rootDirectory = path.join(process.cwd(), "content", "blog");
+export const rootDirectory = path.join(process.cwd(), "content", "blogs");
 
 
-export const getPostBySlug = async (slug: string) => {
-  const realSlug = slug.replace(/\$/, "");
-  const filePath = path.join(rootDirectory, `${realSlug}`);
+export const getPostMetadata = (): PostMeta[] => {
+  const files = fs.readdirSync(rootDirectory);
+  const markdownPosts = files.filter((file) => file.endsWith(".mdx"));
 
-  const fileContent = fs.readFileSync(filePath, { encoding: "utf8" });
-  
-  const { frontmatter, content } = await compileMDX({
-    source: fileContent,
-    options: { parseFrontmatter: true },
+  // Get gray-matter data from each file.
+  const posts = markdownPosts.map((fileName) => {
+    const fileContents = fs.readFileSync(
+      `${rootDirectory}/${fileName}`,
+      "utf8"
+    );
+    const matterResult = matter(fileContents);
+    return {
+      title: matterResult.data.title,
+      date: matterResult.data.date,
+      description: matterResult.data.description,
+      slug: fileName.replace(".mdx", ""),
+    };
   });
 
-  return { meta: { ...frontmatter, slug: realSlug }, content };
-};
-
-export const getAllPostsMeta = async () => {
-  const files = fs.readdirSync(rootDirectory);
-  
-  let posts = [];
-
-  for (const file of files) {
-    const { meta } = await getPostBySlug(file);
-    posts.push(meta);
-  }
   return posts;
 };
+
+
+export const getPostContent = (slug: string) => {
+  const file = `${rootDirectory}/${slug}.mdx`;
+  const content = fs.readFileSync(file, "utf8");
+  const matterResult = matter(content);
+  return matterResult;
+};
+
+
+
