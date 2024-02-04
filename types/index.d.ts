@@ -41,4 +41,5 @@ export interface PostMeta {
   description: string;
   date: string;
   thumbnail: string;
+  author: string;
 }

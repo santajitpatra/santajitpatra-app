@@ -22,6 +22,7 @@ export const getPostMetadata = (): PostMeta[] => {
       date: matterResult.data.date,
       description: matterResult.data.description,
       thumbnail: matterResult.data.thumbnail,
+      author: matterResult.data.author,
       slug: fileName.replace(".mdx", ""),
     };
   });
