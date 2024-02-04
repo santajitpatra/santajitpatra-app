@@ -1,4 +1,5 @@
 import { PostMeta } from "@/types";
+import Image from "next/image";
 import Link from "next/link";
 
 const PostPreview = (props: PostMeta) => {
@@ -7,14 +8,21 @@ const PostPreview = (props: PostMeta) => {
       <Link
         key={props?.slug}
         href={`/blogs/${props.slug}`}
-        className="relative p-8 rounded-2xl shadow-lg bg-white w-full h-56 flex flex-col"
+        className="relative rounded-xl w-full flex flex-col"
         style={{ minHeight: "200px" }}
       >
-        <h3 className="text-xl font-semibold bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent hover:underline mb-4 ">
+        <Image
+          src={props?.thumbnail || "/slide/slide1.jpg"}
+          alt={props.title}
+          width={200}
+          height={200}
+          className="rounded-2xl w-auto h-50 mb-4"
+        />
+        <h3 className="text-3xl font-semibold bg-gradient-to-r from-cyan-600 to-cyan-400 bg-clip-text text-transparent hover:underline line-clamp-2">
           {props?.title}
         </h3>
-        <p className="text-slate-600">{props.description}</p>
-        <time className="text-[12px] text-slate-400 absolute bottom-8 left-8">
+        <p className="text-slate-400 mb-8 line-clamp-3">{props.description}</p>
+        <time className="text-[12px] text-slate-400 absolute bottom-4">
           {props?.date}
         </time>
       </Link>
