@@ -1,6 +1,8 @@
 import { PostMeta } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
+import { LuUserCircle2 } from "react-icons/lu";
+import { IoTimeOutline } from "react-icons/io5";
 
 const PostPreview = (props: PostMeta) => {
   return (
@@ -24,10 +26,14 @@ const PostPreview = (props: PostMeta) => {
           </h3>
         </div>
         <div>
-          <p className="text-lg font-medium text-slate-400">
+          <p className="flex items-center text-lg font-medium text-slate-400">
+            <LuUserCircle2 className="mr-2" />
             {props?.author || "Santajit Patra"}
           </p>
-          <time className="text-xs text-slate-200">{props?.date}</time>
+          <time className="flex items-center text-xs text-slate-400">
+            <IoTimeOutline className="mr-2" />
+            {props?.date}
+          </time>
         </div>
       </Link>
     </>

@@ -2,7 +2,6 @@
 import { cn } from "@/lib/utils";
 import React, { useState, useEffect } from "react";
 
-
 const Whatsapp = () => {
   const [show, handleShow] = useState(false);
 
@@ -35,7 +34,7 @@ const Whatsapp = () => {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-brand-whatsapp"
+          className={cn(show && "icon icon-tabler icon-tabler-brand-whatsapp")}
           width="42"
           height="42"
           viewBox="0 0 24 24"
