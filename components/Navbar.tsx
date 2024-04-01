@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
+import { getServerSession } from "next-auth";
+import { authConfig } from "@/lib/auth";
 
 const menu = [
   { title: "About", link: "/about" },
@@ -10,7 +12,8 @@ const menu = [
   { title: "Contact", link: "/contact" },
 ];
 
-const Navbar = () => {
+const Navbar = async () => {
+  const session = await getServerSession(authConfig);
   return (
     <div>
       <header className="z-50 relative flex w-screen max-w-screen-xl flex-col overflow-hidden sm:px-4 lg:px-0 py-4 md:mx-auto md:flex-row md:items-center">
@@ -80,11 +83,21 @@ const Navbar = () => {
             ))}
             <li className="xl:mr-8 md:mr-6 hover:text-cyan-300">
               <Button className="rounded-full w-24" asChild>
-                <Link href="/sign-in" className="btn-primary">
-                  Sign In
-                </Link>
+                {session ? (
+                  <Link
+                    href="/app/api/auth/signout?callbackUrl"
+                    className="btn-primary"
+                  >
+                    Log Out
+                  </Link>
+                ) : (
+                  <Link href="/api/auth/signin" className="btn-primary">
+                    Sign In
+                  </Link>
+                )}
               </Button>
             </li>
+
             {/* <li className="hidden md:flex">
               <ModeToggle />
             </li> */}
