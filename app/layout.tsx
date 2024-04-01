@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { customMetadata } from "@/lib/customMetadata";
 import GoogleTagManager from "@/components/SEO/GoogleTagManager";
 import GoogleTagManagerHead from "@/components/SEO/GoogleTagManagerHead";
-import AuthProvider from "@/components/AuthProvider";
+import AuthProvider from "@/components/auth/AuthProvider";
 
 
 const inter = Inter({ subsets: ["latin"] });

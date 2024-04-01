@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { ModeToggle } from "./ModeToggle";
 import { getServerSession } from "next-auth";
 import { authConfig } from "@/lib/auth";
+import SessionStatus from "./auth/SessionStatus";
 
 const menu = [
   { title: "About", link: "/about" },
@@ -82,20 +83,7 @@ const Navbar = async () => {
               </li>
             ))}
             <li className="xl:mr-8 md:mr-6 hover:text-cyan-300">
-              <Button className="rounded-full w-24" asChild>
-                {session ? (
-                  <Link
-                    href="/app/api/auth/signout?callbackUrl"
-                    className="btn-primary"
-                  >
-                    Log Out
-                  </Link>
-                ) : (
-                  <Link href="/api/auth/signin" className="btn-primary">
-                    Sign In
-                  </Link>
-                )}
-              </Button>
+              <SessionStatus session={session} />
             </li>
 
             {/* <li className="hidden md:flex">
