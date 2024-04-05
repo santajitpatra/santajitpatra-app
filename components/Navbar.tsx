@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
-import { ModeToggle } from "./ModeToggle";
+// import { ModeToggle } from "./ModeToggle";
 import { getServerSession } from "next-auth";
 import { authConfig } from "@/lib/auth";
 import SessionStatus from "./auth/SessionStatus";
