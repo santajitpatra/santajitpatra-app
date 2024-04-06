@@ -6,7 +6,11 @@ const nextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   // Optionally, add any other Next.js config below
   images: {
-    domains: ["images.unsplash.com", "images.pexels.com"],
+    domains: [
+      "images.unsplash.com",
+      "images.pexels.com",
+      "avatars.githubusercontent.com",
+    ],
   },
 };
 

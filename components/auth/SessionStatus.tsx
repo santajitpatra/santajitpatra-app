@@ -2,6 +2,7 @@
 
 import { signIn, signOut } from "next-auth/react";
 import { Button } from "../ui/button";
+import UserAccountNav from "./UserAccountNav";
 
 interface SessionStatusProps {
   session: any;
@@ -10,11 +11,7 @@ interface SessionStatusProps {
 export default function SessionStatus({ session }: SessionStatusProps) {
   if (session) {
     return (
-      <Button className="rounded-full w-24" asChild>
-        <span className="btn-primary" onClick={() => signOut()}>
-          Log Out
-        </span>
-      </Button>
+      <UserAccountNav user={session.user} />
     );
   }
   return (
