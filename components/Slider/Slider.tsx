@@ -3,14 +3,15 @@ import { homeConfig } from "@/config/home";
 import { Button } from "../ui/button";
 import "./style.css";
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 const HeaderSlide: React.FC = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
   const thumbnailBorderRef = useRef<HTMLDivElement | null>(null);
   // Add your variable declarations here
-  const timeRunning = 7000;
-  const timeAutoNext = 10000;
+  const timeRunning = 10000;
+  const timeAutoNext = 25000;
   let runTimeOut: NodeJS.Timeout;
   let runNextAuto: NodeJS.Timeout;
 
@@ -94,11 +95,19 @@ const HeaderSlide: React.FC = () => {
           <div className="item" key={slide.id}>
             <img src={slide.image} alt={slide.title} />
             <div className="content">
-              <div className="title text-cyan-400">{slide.title}</div>
-              <div className="des text-slate-2y00">{slide.description}</div>
+              <div className="title text-cyan-500">{slide.title}</div>
+              <div className="des text-slate-200">{slide.description}</div>
               <div className="buttons">
-                <Button className="btn-primary">SEE MORE</Button>
-                <Button className="btn-primary">SUBSCRIBE</Button>
+                <Button className="rounded-full" asChild>
+                  <Link href="/about" className="btn-primary">
+                    SEE MORE
+                  </Link>
+                </Button>
+                <Button className="rounded-full" asChild>
+                  <Link className="btn-primary" href="/contact">
+                    CONTACT US
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
