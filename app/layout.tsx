@@ -8,6 +8,7 @@ import { customMetadata } from "@/lib/customMetadata";
 import GoogleTagManager from "@/components/SEO/GoogleTagManager";
 import GoogleTagManagerHead from "@/components/SEO/GoogleTagManagerHead";
 import AuthProvider from "@/components/auth/AuthProvider";
+import { Toaster } from "@/components/ui/toaster";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Footer />
           {/* </ThemeProvider> */}
         </AuthProvider>
+        <Toaster />
       </body>
     </html>
   );

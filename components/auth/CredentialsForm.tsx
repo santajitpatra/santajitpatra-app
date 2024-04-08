@@ -3,6 +3,8 @@
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { useToast } from "../ui/use-toast";
+import { ToastAction } from "../ui/toast";
 
 interface CredentialsFormProps {
   csrfToken?: string;
@@ -11,8 +13,9 @@ interface CredentialsFormProps {
 export function CredentialsForm(props: CredentialsFormProps) {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
+  const { toast } = useToast();
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
 
@@ -33,8 +36,17 @@ export function CredentialsForm(props: CredentialsFormProps) {
 
   return (
     <form
+      onClick={() => {
+        toast({
+          title: "You are now signed in",
+          description: "You will be redirected to the schedule page",
+          action: (
+            <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
+          ),
+        });
+      }}
       className="w-full mt-8 text-xl text-black font-semibold flex flex-col"
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
     >
       {error && (
         <span className="p-4 mb-2 text-lg font-semibold text-white bg-red-500 rounded-md">

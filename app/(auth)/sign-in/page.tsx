@@ -12,8 +12,7 @@ import { getCsrfToken } from "next-auth/react";
 export default async function SignInPage() {
   const session = await getServerSession(authConfig);
 
-  console.log("Session: ", session);
-
+  
   if (session) return redirect("/");
 
   return (
