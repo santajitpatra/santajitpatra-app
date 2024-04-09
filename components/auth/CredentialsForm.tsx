@@ -26,7 +26,7 @@ export function CredentialsForm(props: CredentialsFormProps) {
     });
 
     if (signInResponse && !signInResponse.error) {
-      //Redirect to homepage (/)
+      // Redirect to homepage (/)
       router.push("/");
     } else {
       console.log("Error: ", signInResponse);
@@ -36,17 +36,8 @@ export function CredentialsForm(props: CredentialsFormProps) {
 
   return (
     <form
-      onClick={() => {
-        toast({
-          title: "You are now signed in",
-          description: "You will be redirected to the schedule page",
-          action: (
-            <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
-          ),
-        });
-      }}
       className="w-full mt-8 text-xl text-black font-semibold flex flex-col"
-      // onSubmit={handleSubmit}
+      onSubmit={handleSubmit}
     >
       {error && (
         <span className="p-4 mb-2 text-lg font-semibold text-white bg-red-500 rounded-md">
@@ -70,6 +61,15 @@ export function CredentialsForm(props: CredentialsFormProps) {
       />
 
       <button
+        onClick={() => {
+          toast({
+            title: "You are now signed in",
+            description: "You will be redirected to the schedule page",
+            action: (
+              <ToastAction altText="Goto schedule to undo">Undo</ToastAction>
+            ),
+          });
+        }}
         type="submit"
         className="w-full h-12 px-6 mt-4 text-lg text-white transition-colors duration-150 btn-primary"
       >
