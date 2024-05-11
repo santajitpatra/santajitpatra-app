@@ -1,3 +1,4 @@
+import { Images } from "@/constants";
 import { ProjectConfig } from "@/types";
 
 // projectdb.ts:
@@ -9,7 +10,7 @@ export const projectConfig: ProjectConfig = {
         "Connector is the world's social network, connecting people from all over the globe. With Connector, you can make new friends, stay in touch with old friends, and share your thoughts and ideas with the world. Whether you're interested in connecting with people who share your interests, learning about different cultures, or just finding someone to chat with, Connector has you covered.",
       name: "Santajit Patra",
       about: "Freelance web developer",
-      image: "/connector.png",
+      image: Images.connector,
       button: "https://connector0.netlify.app",
       buttonSource: "https://github.com/santajitpatra/connector",
     },
@@ -19,7 +20,7 @@ export const projectConfig: ProjectConfig = {
         "The Hotel Booking Web App is a convenient and easy-to-use platform that allows users to search for and book hotels from all over the world. With just a few clicks, users can find the perfect hotel for their needs, based on location, price, amenities, and more.",
       name: "Santajit Patra",
       about: "Freelance web developer",
-      image: "/waterbnb.png",
+      image: Images.waterbnb,
       button: "https://waterbnb.netlify.app",
       buttonSource: "https://github.com/santajitpatra/waterbnb",
     },
@@ -30,7 +31,7 @@ export const projectConfig: ProjectConfig = {
         "I recently completed the development of Hotflix, a streaming web site for watching movies and shows. Hotflix offers a comprehensive selection of movies and shows from a variety of genres. Users can browse through the library and watch their favorite movies and shows. The site also features a ratings system for each movie or show so users can easily find the best content. Additionally, Hotflix provides a personalized experience for each user by offering recommendations based on their viewing history. Hotflix is a great way to watch the latest movies and shows in a convenient and enjoyable way.",
       name: "Santajit Patra",
       about: "Freelance web developer",
-      image: "/hotflix.png",
+      image: Images.hotflix,
       button: "https://hotflix0.netlify.app",
       buttonSource: "https://github.com/santajitpatra/hotflix.git",
     },
@@ -40,7 +41,7 @@ export const projectConfig: ProjectConfig = {
         "Blackhole is the ecommerce website for the adventurous shopper. We offer a wide variety of hard-to-find products, from the bizarre to the beautiful. Whether you're looking for a pet rock, a unicorn horn, or a genuine piece of moon rock, we've got you covered. Blackhole is the perfect place to find unique gifts for the people in your life. Our products are sure to impress, and they're guaranteed to make a lasting impression.Blackhole is more than just an ecommerce website. It's a portal to another world, where anything is possible. So what are you waiting for? Come on in and explore the Blackhole.",
       name: "Santajit Patra",
       about: "Freelance web developer",
-      image: "/blackhole.png",
+      image: Images.blackhole,
       button: "https://blackholee.vercel.app",
       buttonSource: "https://github.com/santajitpatra/blackhole.git",
     },

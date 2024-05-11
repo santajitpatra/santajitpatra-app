@@ -3,6 +3,7 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { ProjectItem } from "@/types";
+import { Images } from "@/constants";
 
 
 const Project: React.FC<ProjectItem> = ({
@@ -18,7 +19,7 @@ const Project: React.FC<ProjectItem> = ({
     <div className="flex py-7 px-7 pr-4 border-b cursor-pointer transition duration-200 ease-out first:border-t bg-white rounded-3xl mb-10 flex-col sm:flex-row">
       <div className="relative">
         <Image
-          src={image || "/code.jpg"}
+          src={image || Images.code}
           alt="Picture of the author"
           width={500}
           height={380}

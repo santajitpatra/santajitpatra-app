@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import NotFoundImg from "/public/images/404.png";
 import { Button } from "@/components/ui/button";
+import { Images } from "@/constants";
 
 
 export default function NotFound() {
@@ -12,7 +13,7 @@ export default function NotFound() {
           <div className="flex flex-col items-center w-full h-full">
             <Image
               className=" mb-4"
-              src={NotFoundImg}
+              src={Images.error404}
               width={300}
               height={300}
               alt=""

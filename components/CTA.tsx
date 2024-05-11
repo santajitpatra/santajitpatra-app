@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import  santajit  from "@/public/images/santajit-patra-11.jpeg";
+import { Images } from '@/constants';
 
 
 const CTA = () => {
@@ -22,7 +22,7 @@ const CTA = () => {
           <div className="hidden h-72 w-1/2 flex-shrink-0 justify-center lg:flex">
             <Image
               className="w-48 h-48 m-12 rounded-full"
-              src={santajit}
+              src={Images.profile}
               alt="#"
               width={500}
               height={500}

@@ -1,10 +1,12 @@
+import { Images } from "@/constants";
+
 export default function BlogCTA() {
   return (
     <>
       <div className="py-20">
         <div className="container mx-auto flex flex-col items-center">
           <img
-            src="/images/santajit-patra-11.jpeg"
+            src={Images.profile}
             alt="Your Name"
             className="rounded-full w-32 h-32 mb-4"
           />

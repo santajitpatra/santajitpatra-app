@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import appStore from "public/images/appstore-free-img.png";
-import playStore from "public/images/playstore-free-img.png";
+import { Images } from "@/constants";
 
 
 const FooterMenu = () => {
@@ -134,7 +133,7 @@ const FooterMenu = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={appStore}
+                  src={Images.appstore}
                   className="w-48 pb-5 rounded-lg"
                   alt="Picture of the author"
                   width={500}
@@ -147,7 +146,7 @@ const FooterMenu = () => {
                 rel="noopener noreferrer"
               >
                 <Image
-                  src={playStore}
+                  src={Images.playstore}
                   className="w-48 pb-5 rounded-lg"
                   alt="Picture of the author"
                   width={500}

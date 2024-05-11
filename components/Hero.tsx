@@ -1,12 +1,13 @@
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from './ui/button';
-import { useState } from 'react';
-import { Skeleton } from './ui/skeleton';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { useState } from "react";
+import { Skeleton } from "./ui/skeleton";
+import { Images } from "@/constants";
 
 const Hero = () => {
-    const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <>
@@ -54,7 +55,7 @@ const Hero = () => {
               <>
                 <Image
                   className="h-56 w-full rounded-3xl object-cover shadow-lg sm:h-96"
-                  src={"/images/seox.png"}
+                  src={Images.seox}
                   alt="#"
                   width={500}
                   height={500}
@@ -81,6 +82,6 @@ const Hero = () => {
       </div>
     </>
   );
-}
+};
 
-export default Hero
+export default Hero;

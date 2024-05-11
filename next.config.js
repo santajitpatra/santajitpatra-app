@@ -10,6 +10,7 @@ const nextConfig = {
       "images.unsplash.com",
       "images.pexels.com",
       "avatars.githubusercontent.com",
+      "santajitpatra.unaux.com",
     ],
   },
 };

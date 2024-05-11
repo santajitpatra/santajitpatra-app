@@ -1,3 +1,4 @@
+import { PDFs } from '@/constants';
 import Link from 'next/link';
 
 function DownloadCV() {
@@ -13,7 +14,7 @@ function DownloadCV() {
         my CV provides a detailed overview of my skills and experience. <br />
         Click here to download my CV and learn more about me.
       </p>
-      <Link href="Santajit_Patra_CV.pdf" className="btn-primary">
+      <Link href={PDFs.myCV} className="btn-primary">
         Download CV
       </Link>
     </section>

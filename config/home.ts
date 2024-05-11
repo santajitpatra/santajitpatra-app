@@ -1,3 +1,4 @@
+import { Images } from "@/constants";
 import { HomeConfig } from "@/types";
 
 export const homeConfig: HomeConfig[] = [
@@ -7,7 +8,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide1.jpg",
+    image: Images.slide1,
   },
   {
     id: 2,
@@ -15,7 +16,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide2.jpg",
+    image: Images.slide2,
   },
   {
     id: 3,
@@ -23,7 +24,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide4.jpg",
+    image: Images.slide6,
   },
   {
     id: 4,
@@ -31,7 +32,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide5.jpg",
+    image: Images.slide4,
   },
   {
     id: 5,
@@ -39,6 +40,7 @@ export const homeConfig: HomeConfig[] = [
     about: "Santajit ",
     description:
       "Elevate your online presence with my expert web development services. From stunning designs to custom functionality, I'll help you stand out in a crowded digital world. Let Me help you achieve your online goals and drive results with a website that engages and converts.",
-    image: "/slide/slide6.jpg",
+    image: Images.slide5,
   },
+ 
 ];

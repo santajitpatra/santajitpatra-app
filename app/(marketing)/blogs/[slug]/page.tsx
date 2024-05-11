@@ -2,6 +2,7 @@ import Markdown from "markdown-to-jsx";
 import { getPostContent, getPostMetadata } from "@/lib/mdx";
 import BlogCTA from "@/components/BlogCTA";
 import Image from "next/image";
+import { Images } from "@/constants";
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata();
@@ -22,7 +23,7 @@ const PostPage = (props: any) => {
           <p className="text-slate-400 mt-2">{post.data.date}</p>
         </div>
         <Image
-          src={post.data.thumbnail || "/slide/slide1.jpg"}
+          src={post.data.thumbnail || Images.slide1}
           className="rounded-xl m-auto mt-10"
           width={1000}
           height={1000}
